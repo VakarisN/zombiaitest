@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politiniai Lavonai</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="main-container">
+        <h1>Politiniai Lavonai</h1>
+        
+        <div class="warning-box">
+            <p>Raginame išreikšti savo poziciją Seimo nariams, kurie balsavo prieš arba susilaikė 2025 m. kovo 13 d. Seimo balsavime dėl siūlymo dar vieneriems metams pratęsti nacionalines sankcijas Rusijos ir Baltarusijos piliečiams, kas mūsų nuomone kelia grėsmę Lietuvos ir Europos saugumui, bet galimai prieštarauja Seimo nario duotai priesaikai saugoti valstybės nepriklausomybę ir teritorinį vientisumą.</p>
+            <p>Žemiau pateikiame šių parlamentarų viešus el. pašto adresus – kviečiame parašyti savo žinutę arba pasinaudoti mūsų parengtais laiškų šablonais.</p>
+        </div>
+
+        <div class="email-box">
+            <p><strong>Kontaktai:</strong></p>
+            <p id="emailList">
+                email1@example.com, email2@example.com, email3@example.com, email4@example.com, email5@example.com, email6@example.com, email7@example.com, email8@example.com, email9@example.com, email10@example.com, email11@example.com, email12@example.com, email13@example.com, email14@example.com, email15@example.com
+            </p>
+            <button class="copy-btn" onclick="copyEmails()">📋 Kopijuoti</button>
+        </div>
+
+        <input type="text" class="email-input" id="emailText" placeholder="Parašykite savo žinutę...">
+
+        <div class="btn-container">
+            <button class="send-btn" onclick="sendEmail()">📨 SIŲSTI</button>
+            <button class="random-btn" onclick="randomMessage()">🎲 RANDOM</button>
+        </div>
+
+        <!-- Animated Zombie -->
+        <img class="zombie-bounce" id="zombie" src="https://i.ibb.co/RpK3VT5D/SCR-20250315-ockq.jpg" alt="Walking Zombie">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
