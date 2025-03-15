@@ -10,8 +10,8 @@ body {
     text-align: center;
     padding: 20px;
     position: relative;
-    overflow: hidden;
-    height: 100vh;
+    overflow-y: auto; /* Allows vertical scrolling */
+    height: auto; /* Removes fixed height */
     line-height: 1.5;
     letter-spacing: 1px;
     word-spacing: 2px;
@@ -36,7 +36,7 @@ h1 {
     box-shadow: 8px 8px 0px #000;
     color: red;
     font-size: 0.8rem;
-    line-height: 1.5; /* Applies to specific elements */
+    line-height: 1.5;
 }
 
 .email-box {
@@ -47,7 +47,7 @@ h1 {
     margin: 20px auto;
     box-shadow: 8px 8px 0px #000;
     font-size: 0.9rem;
-    line-height: 1.5; /* Applies to specific elements */
+    line-height: 1.5;
 }
 
 .copy-btn {
@@ -110,5 +110,18 @@ h1 {
     .main-container {
         max-width: 90%; /* Adjusts max-width for smaller screens */
         margin: auto;
+    }
+    
+    .warning-box, .email-box {
+        width: 90%; /* Adjusts width for smaller screens */
+        margin: 10px auto; /* Reduces margin for smaller screens */
+    }
+    
+    .email-input {
+        width: 90%; /* Adjusts input width for smaller screens */
+    }
+    
+    .zombie-bounce {
+        display: none; /* Hides the zombie on smaller screens */
     }
 }
